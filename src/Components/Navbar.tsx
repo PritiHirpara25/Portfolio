@@ -4,9 +4,9 @@ import getNavLinkClass from '../Utils/Render'
 export default function Navbar() {
     return (
         <div>
-            <nav className='fixed top-0 left-0 right-0 bg-black text-white flex justify-between items-center py-6 px-52'>
+            <nav className='fixed left-0 right-0 bg-black text-white flex justify-between items-center py-6 px-52'>
                 <div className='border border-white'>
-                    Logo
+                    Logo    
                 </div>
                 <div className='flex items-center gap-10'>
                     <NavLink to='/' className={getNavLinkClass}>Home</NavLink>
@@ -17,7 +17,7 @@ export default function Navbar() {
                     <button className='border border-white py-3 px-5 rounded-sm'>Hire Me Now</button>
                 </div>
             </nav>
-            <main>
+            <main className='pt-24'>
                 <Outlet />
             </main>
         </div>
