@@ -24,3 +24,19 @@
 @keyframes typing{
     from {width: 0}
 }
+
+
+/* mouse down */
+
+@keyframes mouse-down{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.animate-mouse{
+    animation: mouse-down 0.9s ease 0s infinite normal none running;
+}
