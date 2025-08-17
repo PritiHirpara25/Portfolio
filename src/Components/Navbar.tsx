@@ -21,10 +21,10 @@ export default function Navbar() {
 
     return (
         <div>
-            <nav className={`fixed left-0 right-0 z-50 ${scrolled ? 'bg-[#262626] opacity-90' : 'bg-transparent'} text-white flex justify-between items-center py-6 px-52`}>
-                <div className='border border-white'>
+            <nav className={`fixed left-0 right-0 z-50 ${scrolled ? 'bg-[#262626] opacity-90' : 'bg-transparent'} text-white flex justify-center items-center py-6 px-52`}>
+                {/* <div className='border border-white'>
                     Logo
-                </div>
+                </div> */}
                 <div className='flex items-center gap-10'>
                     <NavLink to='/' className={({ isActive }) => getNavLinkClass({ isActive })}>Home</NavLink>
                     <NavLink to='/about' className={({ isActive }) => getNavLinkClass({ isActive })}>About</NavLink>
