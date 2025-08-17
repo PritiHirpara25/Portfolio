@@ -11,35 +11,35 @@ export default function Routes() {
 
     const router = createBrowserRouter([
         {
-            path:'/',
-            element:<Navbar/>,
-            children:[
+            path: '/',
+            element: <Navbar />,
+            children: [
                 {
-                    index:true,
-                    element:<Home/>
+                    index: true,
+                    element: <Home />
                 },
-                 {
-                    path:'/about',
-                    element:<About/>
+                {
+                    path: '/about',
+                    element: <About />
                 },
-                 {
-                    path:'/service',
-                    element:<Service/>
+                {
+                    path: '/service',
+                    element: <Service />
                 },
-                 {
-                    path:'/portfolio',
-                    element:<Portfolio/>
+                {
+                    path: '/portfolio',
+                    element: <Portfolio />
                 },
-                 {
-                  path:'/contact',
-                    element:<Contact/>
+                {
+                    path: '/contact',
+                    element: <Contact />
                 },
 
             ]
         }
     ])
-  
+
     return (
-    <RouterProvider router={router}/>
-  )
+        <RouterProvider router={router} />
+    )
 }

@@ -1,9 +1,7 @@
-import React from 'react'
-
 export default function About() {
   return (
-    <div>
-      About
+    <div id='about' className="h-[500px]">
+      About Page
     </div>
   )
 }
