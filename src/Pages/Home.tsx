@@ -2,14 +2,17 @@ import { NavLink } from 'react-router-dom'
 import home from '../assets/home.jpg'
 import { IoLogoLinkedin, IoLogoFacebook, IoLogoInstagram, IoLogoPinterest } from "react-icons/io";
 import About from './About';
+import BackgroundParticles from '../Components/background-animation';
 
 export default function Home() {
   return (
     <div>
       <div style={{ backgroundImage: `url(${home})` }} className='bg-black relative h-screen bg-contain bg-[center_top_8rem] bg-no-repeat flex justify-center'>
-
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="relative text-white flex flex-col items-center text-center">
+        <div className="absolute inset-0 z-0">
+          <BackgroundParticles />
+        </div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="relative text-white flex flex-col items-center text-center z-20">
 
           <div className='mt-80'>
 
