@@ -45,8 +45,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div id='about'>
-        <About />
+      <div className='bg-[#262626] px-52'>
+        <div id='about'>
+          <About />
+        </div>
       </div>
 
     </div>
