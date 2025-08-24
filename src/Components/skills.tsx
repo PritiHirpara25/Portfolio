@@ -2,9 +2,9 @@ export default function Skills() {
 
     const skill = [
         { label: 'HTML', value: 95 },
-        { label: 'CSS', value: 95 },
-        { label: 'JS', value: 95 },
-        { label: 'React', value: 95 },
+        { label: 'CSS', value: 45 },
+        { label: 'JS', value: 80 },
+        { label: 'React', value: 64 },
     ]
 
     return (
@@ -17,8 +17,11 @@ export default function Skills() {
                             <label>{item.label}</label>
                             <span className="text-gray-400">{item.value}%</span>
                         </div>
-                        <div className="bg-gradient-to-r from purple-500 to-pink-700 h-1.5 rounded-xl shadow-white"
-                            style={{ width: `${item.value}` }}>
+                        <div className="w-full bg-gray-200 h-1.5 rounded-xl">
+                            <div
+                                className={"bg-gradient-to-r from-black to-pink-500 h-1.5 rounded-xl"}
+                                style={{ width: `${item.value}%` }}
+                            ></div>
                         </div>
                     </div>
                 ))}
