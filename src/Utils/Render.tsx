@@ -1,7 +1,7 @@
 type Props = {
-    isActive:boolean;
+    isActive: boolean;
 }
 
-export default function getNavLinkClass({isActive}:Props){
-    return isActive ? 'text-pink-600 font-medium transition duration-300' : "hover:text-pink-600 font-medium transition duration-300" 
+export default function getNavLinkClass({ isActive }: Props) {
+    return isActive ? 'text-[#ff0180] font-medium transition duration-300' : "hover:text-[#ff0180] font-medium transition duration-300"
 }

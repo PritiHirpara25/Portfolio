@@ -13,18 +13,20 @@ function App() {
       <div id="home">
         <Home />
       </div>
-      <div className='bg-[#262626] px-52'>
-        <div id='about'>
-          <About />
-        </div>
-        <div id="service">
-          <Service />
-        </div>
-        <div id="portfolio">
-          <Portfolio />
-        </div>
-        <div id="contact">
-          <Contact />
+      <div className="bg-[#212529]">
+        <div className=' space-y-32'>
+          <div id='about'>
+            <About />
+          </div>
+          <div id="service" className="bg-[#131419]">
+            <Service />
+          </div>
+          <div id="portfolio">
+            <Portfolio />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
         </div>
       </div>
 

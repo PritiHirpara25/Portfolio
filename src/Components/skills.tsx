@@ -15,7 +15,7 @@ export default function Skills() {
                     <div key={index} className="space-y-1.5">
                         <div className="flex justify-between">
                             <label>{item.label}</label>
-                            <span className="text-gray-400">{item.value}%</span>
+                            <span className="text-[#bcbcbc]">{item.value}%</span>
                         </div>
                         <div className="w-full bg-gray-200 h-1.5 rounded-xl">
                             <div
