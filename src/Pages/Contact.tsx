@@ -7,7 +7,7 @@ export default function Contact() {
     <div className='px-52'>
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-4xl">Contact Me</h3>
-        <p className="text-[#bcbcbc] text-lg text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p className="text-[#bcbcbc] text-lg text-center w-5/6">I’m always open to discussing new opportunities, collaborations, or exciting projects.Feel free to reach out, and I’ll get back to you as soon as possible!</p>
       </div>
 
       <div className="flex justify-evenly py-16">

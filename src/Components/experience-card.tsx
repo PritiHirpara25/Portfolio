@@ -8,7 +8,7 @@ interface Props {
 
 export default function ExperienceCard({ title, year, description }: Props) {
     return (
-        <div className="p-8 w-2/5 space-y-4 bg-[#212529] rounded-2xl shadow-[2px_2px_6px_#000000,-2px_-2px_6px_#4d4d4d]">
+        <div className="p-8 w-3/6 space-y-4 bg-[#212529] rounded-2xl shadow-[2px_2px_6px_#000000,-2px_-2px_6px_#4d4d4d]">
             <h3 className="text-2xl">{title}</h3>
             <div className="flex items-center gap-4">
                 <span><FaDribbble className="text-[#ff0180]" /></span>

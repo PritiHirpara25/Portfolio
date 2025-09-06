@@ -21,18 +21,16 @@ export default function Home() {
             </div>
 
             <div className='flex justify-center gap-3 text-2xl mt-5'>
-              <Link to='/' className='drop-shadow-[2px_2px_3px_#000000] shadow-[-1px_-1px_3px_#4d4d4d] rounded-full'>
-                <IoLogoFacebook />
-              </Link>
-              <Link to='/' className='drop-shadow-[2px_2px_3px_#000000] shadow-[-1px_-1px_3px_#4d4d4d] rounded-full'>
+              <a href='https://www.linkedin.com/in/priti-hirpara-8a90aa267/'
+                className='drop-shadow-[2px_2px_3px_#000000] shadow-[-1px_-1px_3px_#4d4d4d] rounded-full cursor-pointer'
+                target='_blank'>
                 <IoLogoLinkedin />
-              </Link>
-              <Link to='/' className='drop-shadow-[2px_2px_3px_#000000] shadow-[-1px_-1px_3px_#4d4d4d] rounded-full'>
+              </a>
+              <a href='https://www.instagram.com/priti_.2506/'
+                className='drop-shadow-[2px_2px_3px_#000000] shadow-[-1px_-1px_3px_#4d4d4d] rounded-full cursor-pointer'
+                target='_blank'>
                 <IoLogoInstagram />
-              </Link>
-              <Link to='/' className='drop-shadow-[2px_2px_3px_#000000] shadow-[-1px_-1px_3px_#4d4d4d] rounded-full'>
-                <IoLogoPinterest />
-              </Link>
+              </a>
             </div>
 
           </div>
