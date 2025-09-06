@@ -1,6 +1,5 @@
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Service from "./Pages/Service";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/navbar";
@@ -17,9 +16,6 @@ function App() {
         <div className=' space-y-32'>
           <div id='about'>
             <About />
-          </div>
-          <div id="service" className="bg-[#131419]">
-            <Service />
           </div>
           <div id="portfolio">
             <Portfolio />

@@ -42,16 +42,6 @@ export default function Navbar() {
           About
         </Link>
         <Link
-          to="service"
-          smooth={true}
-          duration={500}
-          offset={-80}
-          spy={true}
-          activeClass="text-[#ff0180]"
-          className="cursor-pointer hover:text-[#ff0180]">
-          Service
-        </Link>
-        <Link
           to="portfolio"
           smooth={true}
           duration={500}
