@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-.home-content{
+.home-content {
     display: inline-block;
     color: white;
 }
 
-.animated-content{
+.animated-content {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -21,26 +21,42 @@ html {
     animation: typing 2s infinite alternate;
 }
 
-@keyframes cursor{
-    50% {border-color: transparent}
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
 }
 
-@keyframes typing{
-    from {width: 0}
+@keyframes typing {
+    from {
+        width: 0
+    }
 }
 
 
 /* mouse down */
 
-@keyframes mouse-down{
-    0%{
+@keyframes mouse-down {
+    0% {
         transform: translateY(0);
     }
-    100%{
+
+    100% {
         transform: translateY(100%);
     }
 }
 
-.animate-mouse{
+.animate-mouse {
     animation: mouse-down 0.9s ease 0s infinite normal none running;
+}
+
+/* Contact Form Input */
+
+.form-input {
+    background-color: #131419;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05), 5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: #bcbcbc;
+    padding: 14px;
+    border-radius: .25rem;
+    outline: none;
 }

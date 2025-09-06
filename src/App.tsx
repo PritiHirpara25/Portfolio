@@ -1,9 +1,9 @@
-import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Service from "./Pages/Service";
 import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
+import Navbar from "./Components/navbar";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div id="home">
         <Home />
       </div>
-      <div className="bg-[#212529]">
+      <div className="bg-[#212529] pb-20">
         <div className=' space-y-32'>
           <div id='about'>
             <About />
