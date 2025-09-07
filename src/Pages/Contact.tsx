@@ -14,7 +14,7 @@ export default function Contact() {
         <div className="flex flex-col items-center">
           <FaMobileAlt className="text-5xl" />
           <span className="text-lg font-medium pt-3">Call Me</span>
-          <span className="text-[#bcbcbc] text-lg">7383412398</span>
+          <span className="text-[#bcbcbc] text-lg">+91 7383412398</span>
         </div>
 
         <div className="flex flex-col items-center">

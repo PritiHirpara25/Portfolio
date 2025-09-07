@@ -28,7 +28,7 @@ export default function Navbar() {
           offset={-80}
           spy={true}                      // watch scroll position
           activeClass="text-[#ff0180]"     // apply this when active
-          className="cursor-pointer hover:text-[#ff0180]">
+          className={`cursor-pointer hover:text-[#ff0180] ${window.scrollY === 0 ? "text-[#ff0180]" : ""}`}>
           Home
         </Link>
         <Link
@@ -61,7 +61,15 @@ export default function Navbar() {
           className="cursor-pointer hover:text-[#ff0180]">
           Contact
         </Link>
-        <button className="border border-white py-3 px-5 rounded-sm">Hire Me Now</button>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          offset={-80}
+          className="border border-white py-3 px-5 rounded-sm cursor-pointer inline-block"
+        >
+          Hire Me Now
+        </Link>
       </div>
     </nav >
   )
