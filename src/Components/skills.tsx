@@ -1,10 +1,10 @@
 export default function Skills() {
 
     const skill = [
-        { label: 'HTML', value: 95 },
-        { label: 'CSS', value: 45 },
-        { label: 'JS', value: 80 },
-        { label: 'React', value: 64 },
+        { label: 'HTML', value: 80 },
+        { label: 'CSS', value: 80 },
+        { label: 'JS', value: 70 },
+        { label: 'React', value: 75 },
     ]
 
     return (
