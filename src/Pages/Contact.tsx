@@ -10,7 +10,7 @@ export default function Contact() {
         <p className="text-[#bcbcbc] text-lg text-center w-5/6">I’m always open to discussing new opportunities, collaborations, or exciting projects.Feel free to reach out, and I’ll get back to you as soon as possible!</p>
       </div>
 
-      <div className="flex justify-evenly py-16">
+      <div className="sm:flex justify-evenly py-16">
         <div className="flex flex-col items-center">
           <FaMobileAlt className="text-5xl" />
           <span className="text-lg font-medium pt-3">Call Me</span>
