@@ -5,18 +5,22 @@ import Skills from '../Components/skills'
 
 export default function About() {
   return (
-    <div id='about' className='px-52'>
+    <div id='about' className='px-5 sm:px-12 md:px-16 lg:px-20 xl:px-40 2xl:px-52'>
 
-      <div className="grid grid-cols-3 gap-8 py-24">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 py-24">
         <div className="flex flex-col justify-center">
           <Information />
         </div>
 
         <div>
-          <img src={aboutImage} alt='about image' className='rounded-2xl h-[500px] w-full object-cover' />
+          <img
+            src={aboutImage}
+            alt="about image"
+            className="rounded-2xl w-[350px] flex justify-self-center-safe sm:w-full h-auto max-h-[500px] sm:object-cover"
+          />
         </div>
 
-        <div className="py-18">
+        <div className="flex flex-col justify-center">
           <Skills />
         </div>
       </div>

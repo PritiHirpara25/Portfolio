@@ -13,7 +13,7 @@ function App() {
         <Home />
       </div>
       <div className="bg-[#212529] pb-20">
-        <div className=' space-y-32'>
+        <div className='space-y-32'>
           <div id='about'>
             <About />
           </div>
