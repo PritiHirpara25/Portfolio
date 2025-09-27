@@ -27,7 +27,7 @@ export default function About() {
 
       <div className='space-y-12 flex flex-col items-center'>
         <h1 className='text-4xl'>My Experience</h1>
-        <ExperienceCard title='Web Developer' year='March 2025 - Present' description='Developed and maintained responsive web applications using React.js, TypeScript, and Tailwind CSS, ensuring smooth user experiences.' />
+        <ExperienceCard title='Web Developer' year='April 2025 - Present' description='Developed and maintained responsive web applications using React.js, TypeScript, and Tailwind CSS, ensuring smooth user experiences.' />
       </div>
 
     </div>
