@@ -34,11 +34,18 @@ export default function ContactForm() {
         setShowToast(null);
 
         try {
+            const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY } =
+                import.meta.env;
+
+            if (!VITE_EMAILJS_SERVICE_ID || !VITE_EMAILJS_TEMPLATE_ID || !VITE_EMAILJS_PUBLIC_KEY) {
+                throw new Error("EmailJS environment variables are not configured.");
+            }
+
             await emailjs.send(
-                "service_lhpq0ne",
-                "template_h7zw83w",
+                VITE_EMAILJS_SERVICE_ID,
+                VITE_EMAILJS_TEMPLATE_ID,
                 formData,
-                "pTTxxsT4nL0wfYz3c"
+                VITE_EMAILJS_PUBLIC_KEY
             );
 
             setShowToast({
@@ -57,7 +64,7 @@ export default function ContactForm() {
 
             setShowToast({
                 type: "error",
-                message: "Failed to send message. Please check the console.",
+                message: "Failed to send message. Please try again later.",
             });
         } finally {
             setLoading(false);

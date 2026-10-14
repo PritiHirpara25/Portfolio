@@ -4,6 +4,9 @@ import { MdOutlineMail } from "react-icons/md";
 import ContactForm from "../Components/ContactForm";
 
 export default function Contact() {
+  const phone = import.meta.env.VITE_CONTACT_PHONE?.trim();
+  const email = import.meta.env.VITE_CONTACT_EMAIL?.trim();
+
   return (
     <section
       id="contact"
@@ -43,64 +46,68 @@ export default function Contact() {
           </div>
 
           {/* Phone card */}
-          <a
-            href="tel:+917383412398"
-            className="group flex items-center gap-4 rounded-2xl
+          {phone && (
+            <a
+              href={`tel:${phone.replace(/[^\d+]/g, "")}`}
+              className="group flex items-center gap-4 rounded-2xl
               border border-white/10 bg-[#111827] p-5
               transition-all duration-300
               hover:-translate-y-1 hover:border-cyan-400/40
               hover:bg-[#151e2d]"
-          >
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center
+            >
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center
               rounded-xl border border-cyan-400/20 bg-cyan-400/10
               text-2xl text-cyan-400"
-            >
-              <FaMobileAlt />
-            </div>
+              >
+                <FaMobileAlt />
+              </div>
 
-            <div className="min-w-0 flex-1">
-              <p className="text-sm text-gray-400">Call Me</p>
-              <p className="mt-1 break-all font-semibold text-white">
-                +91 7383412398
-              </p>
-            </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-sm text-gray-400">Call Me</p>
+                <p className="mt-1 break-all font-semibold text-white">
+                  {phone}
+                </p>
+              </div>
 
-            <FiArrowUpRight
-              size={20}
-              className="shrink-0 text-gray-500 transition-colors
+              <FiArrowUpRight
+                size={20}
+                className="shrink-0 text-gray-500 transition-colors
                 group-hover:text-cyan-400"
-            />
-          </a>
+              />
+            </a>
+          )}
 
           {/* Email card */}
-          <a
-            href="mailto:pritihirpara256@gmail.com"
-            className="group flex items-center gap-4 rounded-2xl
+          {email && (
+            <a
+              href={`mailto:${email}`}
+              className="group flex items-center gap-4 rounded-2xl
               border border-white/10 bg-[#111827] p-5
               transition-all duration-300
               hover:-translate-y-1 hover:border-cyan-400/40
               hover:bg-[#151e2d]"
-          >
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center
+            >
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center
               rounded-xl border border-violet-400/20 bg-violet-400/10
               text-3xl text-violet-400"
-            >
-              <MdOutlineMail />
-            </div>
+              >
+                <MdOutlineMail />
+              </div>
 
-            <div className="min-w-0 flex-1">
-              <p className="text-sm text-gray-400">Email Me</p>
-              <p className="mt-1 break-all font-semibold text-white">
-                pritihirpara256@gmail.com
-              </p>
-            </div>
+              <div className="min-w-0 flex-1">
+                <p className="text-sm text-gray-400">Email Me</p>
+                <p className="mt-1 break-all font-semibold text-white">
+                  {email}
+                </p>
+              </div>
 
-            <FiArrowUpRight
-              size={20}
-              className="shrink-0 text-gray-500 transition-colors
+              <FiArrowUpRight
+                size={20}
+                className="shrink-0 text-gray-500 transition-colors
                 group-hover:text-cyan-400"
-            />
-          </a>
+              />
+            </a>
+          )}
 
           <div className="rounded-2xl border border-cyan-400/10
             bg-gradient-to-br from-cyan-950/40 to-violet-950/30 p-5"
