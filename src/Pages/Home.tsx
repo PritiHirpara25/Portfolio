@@ -73,13 +73,6 @@ export default function Home() {
             </a>
           ))}
         </div>
-
-        {/* Scroll Indicator */}
-        <a href="#about" className="absolute -bottom-14 flex flex-col items-center gap-2 group">
-          <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center p-1">
-            <div className="scroll-dot"></div>
-          </div>
-        </a>
       </div>
     </section>
   );
