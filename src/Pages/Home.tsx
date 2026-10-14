@@ -49,6 +49,7 @@ export default function Home() {
           <a
             href="/CV/Priti Frontend.pdf"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-xl hover:bg-white/10 transition-all duration-300 backdrop-blur-md"
           >
             <HiDownload className="text-xl" />

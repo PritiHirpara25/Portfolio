@@ -28,7 +28,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         {/* Logo/Name */}
         <Link to="home" smooth={true} className="text-xl font-bold tracking-tighter cursor-pointer group">
-          PRITI<span className="text-cyan-400 group-hover:text-violet-500 transition-colors">.H</span>
+          <span className="text-white transition-colors group-hover:text-cyan-400">PRITI</span>{" "}
+          <span className="text-cyan-400 transition-colors group-hover:text-violet-500">
+            HIRAPARA
+          </span>
         </Link>
 
         {/* Desktop Links */}

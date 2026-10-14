@@ -15,21 +15,21 @@ export default function BackgroundParticles() {
       options={{
         fullScreen: { enable: false },
         background: { color: "transparent" },
-        fpsLimit: 80,
+        fpsLimit: 30,
+        pauseOnBlur: true,
+        pauseOnOutsideViewport: true,
         interactivity: {
           events: {
-            onHover: { enable: true, mode: "repulse" }, // hover effect
-            onClick: { enable: true, mode: "push" } // optional: click to add particles
+            onHover: { enable: true, mode: "repulse" },
           },
           modes: {
-            repulse: { distance: 120, duration: 0.4 }, // hover par repel thashe
-            push: { quantity: 3 } // click par new particles add thashe
+            repulse: { distance: 120, duration: 0.4 },
           }
         },
         particles: {
-          number: { value: 50 },
-          size: { value: 3 },
-          move: { enable: true, speed: 2 },
+          number: { value: 25 },
+          size: { value: 2 },
+          move: { enable: true, speed: 1 },
           opacity: { value: 0.8 },
           links: { enable: true, color: "#ffffff", distance: 180 }
         },
@@ -38,10 +38,8 @@ export default function BackgroundParticles() {
             maxWidth: 1024,
             options: {
               particles: {
-                number: { value: 20 }
-              },
-              modes: {
-                push: { quantity: 1 }
+                number: { value: 12 },
+                move: { speed: 0.7 },
               }
             }
           }
