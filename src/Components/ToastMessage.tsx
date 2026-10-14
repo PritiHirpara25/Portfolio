@@ -7,7 +7,7 @@ type Props = {
     message: string;
 }
 
-export default function ToastMeassage({ type, message }: Props) {
+export default function ToastMessage({ type, message }: Props) {
 
     const [visible, setVisible] = useState(false);
 
