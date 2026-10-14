@@ -52,10 +52,12 @@ export default function ContactForm() {
                 subject: "",
                 message: "",
             });
-        } catch {
+        } catch (error) {
+            console.error("EmailJS error:", error);
+
             setShowToast({
                 type: "error",
-                message: "Failed to send message. Please try again.",
+                message: "Failed to send message. Please check the console.",
             });
         } finally {
             setLoading(false);

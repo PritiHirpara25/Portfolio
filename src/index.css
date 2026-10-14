@@ -69,6 +69,16 @@ body {
   }
 }
 
+@keyframes toast-progress {
+  from {
+    transform: scaleX(1);
+  }
+
+  to {
+    transform: scaleX(0);
+  }
+}
+
 .glow-bg {
   position: absolute;
   width: 40vw;
